@@ -18,13 +18,13 @@ I created a test employee named `lab-alex` and added the account to `lab-finance
 
 Alex could create and read a file in the folder. Another test account, `lab-jamie`, received Permission denied.
 
-![Finance access validation](screenshots/01-finance-access-validation.png)
+![Finance access validation](Screenshots/01-finance-access-validation.png)
 
 ## Mover: Changing departments
 
 I removed Alex from Finance and added the account to IT. I tested both folders to confirm Finance access was denied and IT access worked.
 
-![Department move validation](screenshots/02-department-move-validation.png)
+![Department move validation](Screenshots/02-department-move-validation.png)
 
 ## Leaver: Removing access
 
@@ -32,9 +32,9 @@ I expired Alex's account, locked its password, and removed IT membership. I conf
 
 I also tested a local login using `su`, which returned Authentication failure.
 
-![Offboarding account checks](screenshots/03-offboarding-account-and-access.png)
+![Offboarding account checks](Screenshots/03-offboarding-account-and-access.png)
 
-![Local login denied](screenshots/04-offboarding-local-login-denied.png)
+![Local login denied](Screenshots/04-offboarding-local-login-denied.png)
 
 ## Wazuh investigation
 
@@ -48,9 +48,9 @@ Wazuh recorded the failed login attempt on Ubuntu-Target.
 
 These two screenshots show different sections of the same event.
 
-![Wazuh login event](screenshots/05a-wazuh-offboarding-login-event.png)
+![Wazuh login event](Screenshots/05a-wazuh-offboarding-login-event.png)
 
-![Wazuh rule details](screenshots/05b-wazuh-offboarding-rule-details.png)
+![Wazuh rule details](Screenshots/05b-wazuh-offboarding-rule-details.png)
 
 ## Final access review
 
@@ -60,7 +60,7 @@ These two screenshots show different sections of the same event.
 | Jamie | No Finance or IT membership |
 | Department folders | Correct group ownership and restricted permissions |
 
-![Final access review](screenshots/06-final-access-review.png)
+![Final access review](Screenshots/06-final-access-review.png)
 
 ## What I learned
 
